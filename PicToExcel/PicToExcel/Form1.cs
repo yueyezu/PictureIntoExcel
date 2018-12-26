@@ -6,9 +6,9 @@ using PicToExcel.Convert;
 
 namespace PicToExcel
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }
@@ -73,11 +73,6 @@ namespace PicToExcel
             if (string.IsNullOrEmpty(xlsPath) || string.IsNullOrEmpty(xlsName))
             {
                 UiHelp.ShowWarning("请设置转化后文件的路径和名称。");
-                return;
-            }
-            if (spool == 0)
-            {
-                UiHelp.ShowWarning("请设置一个大于0的精度。");
                 return;
             }
 

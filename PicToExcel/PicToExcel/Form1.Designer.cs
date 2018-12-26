@@ -1,6 +1,6 @@
 ﻿namespace PicToExcel
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -120,11 +120,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 142);
+            this.label1.Location = new System.Drawing.Point(14, 142);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(101, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "颜色精度：";
+            this.label1.Text = "颜色精度(1-50)：";
             // 
             // txtXlsName
             // 
@@ -132,7 +132,7 @@
             this.txtXlsName.Name = "txtXlsName";
             this.txtXlsName.Size = new System.Drawing.Size(137, 21);
             this.txtXlsName.TabIndex = 0;
-            this.txtXlsName.Text = "转化文件";
+            this.txtXlsName.Text = "PicExcel";
             // 
             // label2
             // 
@@ -145,9 +145,19 @@
             // 
             // txtSpool
             // 
-            this.txtSpool.Location = new System.Drawing.Point(99, 138);
+            this.txtSpool.Location = new System.Drawing.Point(121, 138);
+            this.txtSpool.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.txtSpool.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.txtSpool.Name = "txtSpool";
-            this.txtSpool.Size = new System.Drawing.Size(70, 21);
+            this.txtSpool.Size = new System.Drawing.Size(60, 21);
             this.txtSpool.TabIndex = 3;
             this.txtSpool.Value = new decimal(new int[] {
             10,
@@ -155,7 +165,7 @@
             0,
             0});
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,7 +182,10 @@
             this.Controls.Add(this.txtXlsName);
             this.Controls.Add(this.txtXlsPath);
             this.Controls.Add(this.txtPicPath);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PicToXls";
             ((System.ComponentModel.ISupportInitialize)(this.txtSpool)).EndInit();
             this.ResumeLayout(false);

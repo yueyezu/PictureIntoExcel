@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\Common.cs" />
-    <Compile Include="Code\ExcelHelper.cs" />
+    <Compile Include="Code\NpoiExcelHelper.cs" />
     <Compile Include="Code\LogHelper.cs" />
     <Compile Include="Code\UIHelp.cs" />
     <Compile Include="Convert\PicIntoExcelByNpoi.cs" />
